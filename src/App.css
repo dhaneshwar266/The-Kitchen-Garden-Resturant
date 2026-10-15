@@ -1,0 +1,12 @@
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-charcoal-bg);
+  position: relative;
+  overflow-x: hidden;
+}
+
+#main-content {
+  flex: 1;
+}

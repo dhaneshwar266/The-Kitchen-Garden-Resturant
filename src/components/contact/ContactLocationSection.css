@@ -1,0 +1,228 @@
+.contact-section {
+  background-color: var(--color-charcoal-bg);
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 991px) {
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contact-card {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-surface-elevated);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-xl);
+}
+
+.contact-card-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  background-color: var(--color-charcoal-bg);
+  border: 1px solid rgba(199, 123, 80, 0.25);
+  color: var(--color-warm-copper);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.contact-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-warm-offwhite);
+  margin-bottom: 0.75rem;
+}
+
+.contact-address-text {
+  font-size: 0.9375rem;
+  color: var(--color-warm-offwhite);
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+
+.address-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-muted-olive);
+  background-color: rgba(137, 145, 106, 0.12);
+  border: 1px solid rgba(137, 145, 106, 0.25);
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 1rem;
+}
+
+.contact-card-desc {
+  font-size: 0.84375rem;
+  color: var(--color-secondary-text);
+  line-height: 1.55;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.maps-direction-btn, .contact-reserve-btn {
+  margin-top: auto;
+}
+
+/* Hours List */
+.hours-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.hours-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.625rem 0.875rem;
+  background-color: var(--color-charcoal-bg);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-sm);
+  font-size: 0.8125rem;
+}
+
+.hours-service {
+  color: var(--color-secondary-text);
+}
+
+.hours-time {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--color-warm-copper);
+}
+
+.hours-days .hours-time {
+  color: var(--color-muted-olive);
+}
+
+.hours-notice-box {
+  background-color: var(--color-charcoal-bg);
+  border-left: 2px solid var(--color-warm-copper);
+  padding: 0.625rem 0.875rem;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin-bottom: 1rem;
+}
+
+.hours-notice-text {
+  font-size: 0.75rem;
+  color: var(--color-secondary-text);
+  line-height: 1.45;
+}
+
+/* Phone Block */
+.phone-info-block {
+  margin-bottom: 1.25rem;
+}
+
+.info-sub-label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--color-secondary-text);
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.phone-number-link {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-warm-copper);
+  transition: color var(--transition-fast);
+}
+
+.phone-number-link:hover {
+  color: var(--color-warm-copper-hover);
+}
+
+.phone-pending-box {
+  background-color: var(--color-charcoal-bg);
+  border: 1px dashed var(--color-border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem;
+}
+
+.phone-placeholder-text {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-warm-offwhite);
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.phone-pending-note {
+  font-size: 0.75rem;
+  color: var(--color-secondary-text);
+}
+
+.phone-pending-note code {
+  color: var(--color-warm-copper);
+}
+
+/* Banner */
+.map-reference-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  background-color: var(--color-surface-elevated);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-lg);
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.map-banner-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.map-banner-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-warm-offwhite);
+}
+
+.map-banner-desc {
+  font-size: 0.8125rem;
+  color: var(--color-secondary-text);
+  margin-bottom: 0.25rem;
+}
+
+.map-banner-desc code {
+  color: var(--color-warm-copper);
+  word-break: break-all;
+}
+
+.map-banner-note {
+  font-size: 0.75rem;
+  color: var(--color-tertiary-text);
+}
+
+.map-banner-btn {
+  white-space: nowrap;
+}
